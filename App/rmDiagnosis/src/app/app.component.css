@@ -1,0 +1,21 @@
+body, html {
+}
+
+#left-side {
+  background: #3F454C;
+}
+
+#main-section {
+  background: #121212;
+}
+
+#right-side {
+  background: #1F1F1F;
+}
+
+#main-section, #left-side, #right-side {
+  text-align: center;
+  overflow-y: scroll;
+  height: 100%;
+  min-height: 100vh;
+}
