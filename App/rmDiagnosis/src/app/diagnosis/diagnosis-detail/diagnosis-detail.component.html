@@ -1,0 +1,15 @@
+<div class="row" *ngIf="id >= 0">
+  <div class="col-sm">
+    <p class="mat-body-strong" style="color: red;">Disease</p>
+    <p class="mat-body" *ngFor="let disease of diagnosis.diseases" style="color: #FF2366">
+      {{ disease }}
+    </p>
+  </div>
+  <div class="col-sm">
+    <p class="mat-body-strong" style="color: red;">Risks</p>
+    <p class="mat-body" *ngFor="let risk of diagnosis.risks" style="color: #FF2366">
+      {{ risk }}
+    </p>
+  </div>
+</div>
+

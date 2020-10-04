@@ -1,0 +1,13 @@
+.result, .card{
+  background: #3F454C;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card-body {
+  color: #4791FF;
+}
+
+.active {
+  background-color: indigo;
+}

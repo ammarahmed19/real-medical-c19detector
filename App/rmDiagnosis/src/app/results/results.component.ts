@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Diagnosis } from '../shared/diagnosis.model';
+import { DiagnosisService } from '../shared/diagnosis.service';
 
 @Component({
   selector: 'app-results',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultsComponent implements OnInit {
 
-  constructor() { }
+  diagnosis: Diagnosis[];
+
+  constructor(private diagnosisService: DiagnosisService,
+    private route: ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit(): void {
+    this.diagnosis = this.diagnosisService.getAllDiagnosis();
   }
 
 }

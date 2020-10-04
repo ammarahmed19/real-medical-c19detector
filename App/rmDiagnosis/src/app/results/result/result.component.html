@@ -1,0 +1,16 @@
+<a
+[routerLink]="[index]"
+routerLinkActive="active"
+style="cursor: pointer;"
+class="list-group-item clearfix result rounded">
+  <div class="card" routerLinkActive="active rounded">
+    <img [src]="diagnosis.imageSrc"
+    alt="{{ diagnosis.imageSrc }}"
+    class="img-responsive card-img-top"
+    style="max-width: 15vw;">
+    <div class="card-body" routerLinkActive="active">
+      <h4 class="card-title">{{ diagnosis.diseases }}</h4>
+      <p class="card-text">{{ diagnosis.risks }}</p>
+    </div>
+  </div>
+</a>

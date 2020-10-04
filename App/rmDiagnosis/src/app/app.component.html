@@ -1,12 +1,12 @@
 <app-header></app-header>
 <div class="row">
-  <div class="col-sm-2" id="left-side">
+  <div class="col overflow-auto" id="left-side">
     <app-results></app-results>
   </div>
-  <div class="col-sm-7" id="main-section">
-    <app-diagnosis></app-diagnosis>
+  <div class="col overflow-auto" id="main-section">
+    <router-outlet></router-outlet>
   </div>
-  <div class="col-sm-3" id="right-side">
-    <app-results></app-results>
-  </div>
+    <div ngif=""class="col overflow-auto" id="right-side">
+    <app-diagnosis-detail></app-diagnosis-detail>
+    </div>
 </div>
